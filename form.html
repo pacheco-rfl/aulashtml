@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="post" id="formTeste" action="mailto:contato@gmail.com">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="formNome">Nome:</label> <br>
+            <input id="formNome" type="text" name="nome" size="50"></input>
+        </br>
+            <label for="formSigno"> Signo:</label> <br>
+            <input for="formSigno" type="text" name="nome" size="40">    
+        </fieldset>
+        
+
+        <fieldset>
+            <Legend>Regiões</Legend>
+        <p>Selecione a sua Região:</p>
+        
+            <input id="forZn" type="radio" name="regiao" value="zn">
+        <label for="forZn">Zona Norte</label>
+        <br/>
+
+        <input id="forZo" type="radio" name="regiao" value="zo">
+        <label for="forZo">Zona Oeste</label>
+        <br/>
+
+        <input id="forZl" type="radio" name="regiao" value="zl">
+        <label for="forZl">Zona Leste</label>
+        <br/>
+
+        <input id="forZs" type="radio" name="regiao" value="zs">
+        <label for="forZs">Zona Sul</label>
+        
+        </fieldset>
+
+
+
+        <fieldset>
+        <legend>Transportes</legend>
+        <p>Quais são os meios de transporte que você utiliza?</p>
+        <input id="forCanoa" type="checkbox" name="transporte" value="canoa">
+        <label for="forCanoa">Canoa</label>
+        <br/>
+
+        <input id="forBike" type="checkbox" name="transporte" value="bike">
+        <label for="forBike">Bicicleta</label>
+        <br/>
+
+        <input id="forOnibus" type="checkbox" name="transporte" value="onibus">
+        <label for="forOnibus">Ônibus</label>
+        <br/>
+
+        <input id="forMetro" type="checkbox" name="transporte" value="metro">
+        <label for="forMetro">Metrô</label>
+         </fieldset>
+
+
+
+        <fieldset>
+            <legend>Times</legend>
+            <label for="time">Selecione seu time:</label>
+            <select id="time" name="time">
+                <option value="nenhum">Nenhum</option>
+                <option value="flamengo">Flamengo</option>
+                <option value="corinthians">Corinthians</option>
+                <option value="botafogo">Botafogo</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="santos">Santos</option>
+                <option value="vasco">Vasco</option>
+            </select>
+        </fieldset>
+
+
+
+
+        <fieldset>
+            <legend>Marcas</legend>
+            <label for="forMarcas">Escolha sua Marca</label>
+            <input id="forMarcas" name="marca" list="marca" placeholder="Digite sua marca">
+            <datalist id="marca">
+                <option value="NIKE"></option>
+                <option value="ADIDAS"></option>
+                <option value="GEFORCE"></option>
+                <option value="RADEON"></option>
+                <option value="OLYMPIKUS"></option>
+                <option value="JORDAN"></option>
+                <option value="PUMA"></option>
+                <option value="DELL"></option>
+                <option value="REDRAGON"></option>
+                <option value="MULTILASER"></option>
+                <option value="INTEL"></option>
+                <option value="WINDOWS"></option>
+            </datalist>
+        </fieldset>
+
+
+
+
+        <fieldset>
+            <legend>Sugestões, elogios e críticas</legend>
+        <p>Deixe sua opinião</p>              <!--placeholder é oq fica escrito dentro da caixinha antes de escrever-->
+        <textarea name="mensagem" rows="10" cols="50" placeholder="deixe sua mensagem aqui"
+        required>
+        </textarea>
+
+        <br/><br/>
+
+        <br/><br/>
+
+        <input type="submit" value="enviar"> <!-- value é botao enviar-->
+    </fieldset>
+    </form>
+</body>
+</html>
