@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Medidas absolutas e relativas</title>
+    <style>
+        /*At-rules - declaração com instruções de como o css irá se comportar */
+        @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+        body{
+            background-color: rgb(255, 0, 0);
+        }
+
+        p#abs {
+            font-size: 24px; /*Tamanho de fonte absoluta, smp vai ser 24 por ex*/
+            
+        }
+
+        html{
+            font-size: 44px; /*Tamanho da fonte da pagina toda*/
+            font-family: "Share Tech", sans-serif;
+        }
+
+        @media screen and (max-width:800px){
+            body{
+                background-color: rgb(27, 216, 200);
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <p id="abs">Medida absoluta</p>
+
+    <hr>
+    
+
+    <!--Medida Relativa-->
+    <!--em | relativo ao tamanho da fonte do elemento pai-->
+    <div class="paiEM" style="font-size: 16px;">
+        Texto pai
+        <div class="filhoEM" style="font-size: 2em;"> <!--2vezes o tamanho do elemento pai-->
+            Texto filho
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- REM | sucessor do EM. Relativo ao elemento raiz (HTML) -->
+
+    <div>
+        Texto pai
+        <div class="filhoREM" style="font-size: 2rem;"> <!--2 vezes o tamanho da fonte do elemento raiz-->
+            Texto filho 
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Percentual | relativo ao tamanho da fonte do elemento pai -->
+    <div class="paiPer">
+        Texto pai
+        <div class="filhoPer" style="font-size: 300%; color: #df8eff;" >
+            Texto filho
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Viewport | relativo ao tamanho da viewport -->
+    <div class="paiVh">
+        Texto pai
+    </div>
+    <div class="filhoVh" style="font-size: 16vh; "> <!-- 10% do tamanho da altura da janela  -->
+        Texto filho
+    </div>
+
+    <hr>
+
+
+</body>
+</html>
